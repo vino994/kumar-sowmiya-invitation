@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.footer{
+
+  padding:80px 20px;
+
+  text-align:center;
+
+  background:black;
+}
+
+.footer h1{
+
+  font-size:70px;
+
+  color:#f7d7a2;
+
+  font-family:'Great Vibes', cursive;
+}
+
+.footer p{
+
+  margin-top:20px;
+
+  color:#ddd;
+
+  font-size:18px;
+}
+
+.footer span{
+
+  display:block;
+
+  margin-top:20px;
+
+  color:#f7d7a2;
+
+  letter-spacing:3px;
+
+  font-size:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .footer h1{
+
+    font-size:50px;
+  }
+
+  .footer p{
+
+    font-size:15px;
+  }
+}

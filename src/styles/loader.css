@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap');
+
+.loader-screen{
+
+  position:fixed;
+
+  inset:0;
+
+  width:100%;
+  height:100vh;
+
+  overflow:hidden;
+
+  z-index:99999;
+
+  display:flex;
+
+  justify-content:center;
+  align-items:center;
+
+  background:black;
+}
+
+/* BG */
+
+.loader-bg{
+  position:absolute;
+  inset:0;
+}
+
+.loader-bg img{
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  filter:blur(2px);
+}
+
+/* OVERLAY */
+
+.loader-overlay{
+
+  position:absolute;
+  inset:0;
+
+  background:
+    rgba(0,0,0,.45);
+}
+
+/* TEMPLE */
+
+.loader-temple{
+
+  position:absolute;
+
+  bottom:-140px;
+
+  width:430px;
+
+  z-index:2;
+
+  opacity:.95;
+
+  filter:
+    drop-shadow(
+      0 0 40px rgba(255,180,120,.25)
+    );
+}
+
+/* CONTENT */
+
+.loader-content{
+
+  position:relative;
+
+  z-index:5;
+
+  text-align:center;
+}
+
+.loader-content h1{
+
+  font-size:90px;
+
+  color:#ffe0b2;
+
+  font-family:'Cormorant Garamond', serif;
+
+  font-weight:600;
+}
+
+.loader-content h1 span{
+
+  color:#ff9e8d;
+
+  font-family:'Great Vibes', cursive;
+}
+
+.loader-content p{
+
+  color:white;
+
+  margin-top:15px;
+
+  letter-spacing:3px;
+}
+
+/* BUTTON */
+
+.loader-content button{
+
+  margin-top:40px;
+
+  padding:18px 50px;
+
+  border:none;
+
+  border-radius:50px;
+
+  background:#f7d0a1;
+
+  color:black;
+
+  font-size:18px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:.4s;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.3);
+}
+
+.loader-content button:hover{
+
+  background:white;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .loader-content h1{
+
+    font-size:52px;
+  }
+
+  .loader-temple{
+
+    width:300px;
+
+    bottom:-80px;
+  }
+
+  .loader-content button{
+
+    padding:16px 36px;
+
+    font-size:16px;
+  }
+}
