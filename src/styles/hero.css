@@ -14,7 +14,7 @@ body{
 /* HERO */
 
 .hero{
-  position:fixed;
+  position:relative;
 
   inset:0;
 

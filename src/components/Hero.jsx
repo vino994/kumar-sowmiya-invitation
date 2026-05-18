@@ -227,7 +227,7 @@ const templeY = useTransform(
     }}
   >
 
-    November 12, 2026
+    
 
   </motion.h3>
 
